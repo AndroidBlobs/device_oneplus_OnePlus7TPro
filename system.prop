@@ -255,6 +255,11 @@ persist.netmon.linger=5000
 persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 #endif
 #endif
+
+# ifdef VENDOR_EDIT
+# clark.lei@Connectivity, 2019/09/25, add for solve audio crash
+persist.vendor.bt.a2dp.hal.implementation=true
+# endif
 # end of vendor/oneplus/config/msmnile/system.prop
 
 #

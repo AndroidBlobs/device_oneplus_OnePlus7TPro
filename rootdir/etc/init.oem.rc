@@ -60,6 +60,10 @@ on post-fs-data
     chown system system /dev/ht_ctl
     chown system system /dev/cc_ctl
     chown system system /proc/cc_ctl
+    chown system system /dev/cpuset/top-app/cpus
+    chmod 664 /dev/cpuset/top-app/cpus
+    chown system system /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
+    chmod 664 /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
 #endif
 #changhua add for fingerint
 on boot
